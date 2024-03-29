@@ -12,7 +12,7 @@ file(GLOB_RECURSE SOURCES src/*.cpp)
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
-target_compile_options(${PROJECT_NAME} PRIVATE -isystem -Wall -Wextra -Wpedantic -Werror)
+#target_compile_options(${PROJECT_NAME} PRIVATE -isystem -Wall -Wextra -Wpedantic -Werror)
 target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt sfml::sfml)
 #set_target_properties(
 #    ${PROJECT_NAME} PROPERTIES
